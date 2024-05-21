@@ -1,0 +1,172 @@
+[debug] [2024-01-23T15:52:12.338Z] ----------------------------------------------------------------------
+[debug] [2024-01-23T15:52:12.340Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-23T15:52:12.341Z] CLI Version:   13.0.3
+[debug] [2024-01-23T15:52:12.341Z] Platform:      win32
+[debug] [2024-01-23T15:52:12.341Z] Node Version:  v20.10.0
+[debug] [2024-01-23T15:52:12.341Z] Time:          Tue Jan 23 2024 18:52:12 GMT+0300 (GMT+03:00)
+[debug] [2024-01-23T15:52:12.341Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-23T15:52:12.348Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-23T15:52:12.348Z] > authorizing via signed-in user (magnifect@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\PC\Desktop\Bitirmeprojem
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-23T15:52:53.322Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-01-23T15:52:53.878Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-01-23T15:52:53.878Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project bitirme-projem-1db40 (Bitirme projem ) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-01-23T15:52:58.950Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-01-23T15:52:58.951Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/bitirme-projem-1db40
+[debug] [2024-01-23T15:53:00.118Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firebasedatabase.googleapis.com 200
+[debug] [2024-01-23T15:53:00.118Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2024-01-23T15:53:00.119Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2024-01-23T15:53:00.119Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/bitirme-projem-1db40
+[debug] [2024-01-23T15:53:01.578Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2024-01-23T15:53:01.579Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2024-01-23T15:53:11.580Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-01-23T15:53:11.580Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/bitirme-projem-1db40
+[debug] [2024-01-23T15:53:12.716Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firebasedatabase.googleapis.com 200
+[debug] [2024-01-23T15:53:12.716Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-01-23T15:53:12.719Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bitirme-projem-1db40 [none]
+[debug] [2024-01-23T15:53:13.033Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bitirme-projem-1db40 200
+[debug] [2024-01-23T15:53:13.034Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bitirme-projem-1db40 {"projectId":"bitirme-projem-1db40","projectNumber":"364688922649","displayName":"Bitirme projem ","name":"projects/bitirme-projem-1db40","resources":{"hostingSite":"bitirme-projem-1db40"},"state":"ACTIVE","etag":"1_583ef387-9a99-4901-9825-4903c2f23f3f"}
+[debug] [2024-01-23T15:53:32.162Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/bitirme-projem-1db40/locations/europe-west1/instances databaseId=bitirme-projem-1db40-default-rtdb&validateOnly=true
+[debug] [2024-01-23T15:53:32.162Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/bitirme-projem-1db40/locations/europe-west1/instances {"type":"default_database"}
+[debug] [2024-01-23T15:53:33.445Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/bitirme-projem-1db40/locations/europe-west1/instances 200
+[debug] [2024-01-23T15:53:33.445Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/bitirme-projem-1db40/locations/europe-west1/instances {"name":"projects/364688922649/locations/europe-west1/instances/bitirme-projem-1db40-default-rtdb","project":"projects/364688922649","databaseUrl":"https://bitirme-projem-1db40-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2024-01-23T15:53:33.447Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/bitirme-projem-1db40/locations/europe-west1/instances databaseId=bitirme-projem-1db40-default-rtdb
+[debug] [2024-01-23T15:53:33.447Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/bitirme-projem-1db40/locations/europe-west1/instances {"type":"default_database"}
+[debug] [2024-01-23T15:53:34.228Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/bitirme-projem-1db40/locations/europe-west1/instances 200
+[debug] [2024-01-23T15:53:34.228Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/bitirme-projem-1db40/locations/europe-west1/instances {"name":"projects/364688922649/locations/europe-west1/instances/bitirme-projem-1db40-default-rtdb","project":"projects/364688922649","databaseUrl":"https://bitirme-projem-1db40-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-01-23T15:53:42.618Z] >>> [apiv2][query] GET https://bitirme-projem-1db40-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2024-01-23T15:53:43.799Z] <<< [apiv2][status] GET https://bitirme-projem-1db40-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2024-01-23T15:53:43.800Z] <<< [apiv2][body] GET https://bitirme-projem-1db40-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for bitirme-projem-1db40-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-01-23T15:53:43.804Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firestore.googleapis.com [none]
+[debug] [2024-01-23T15:53:43.804Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firestore.googleapis.com x-goog-quota-user=projects/bitirme-projem-1db40
+[debug] [2024-01-23T15:53:44.947Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firestore.googleapis.com 200
+[debug] [2024-01-23T15:53:44.948Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/firestore.googleapis.com [omitted]
+[debug] [2024-01-23T15:53:44.948Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/bitirme-projem-1db40/databases/(default) [none]
+[debug] [2024-01-23T15:53:45.405Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/bitirme-projem-1db40/databases/(default) 200
+[debug] [2024-01-23T15:53:45.405Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/bitirme-projem-1db40/databases/(default) {"name":"projects/bitirme-projem-1db40/databases/(default)","uid":"8d1eb176-bfb5-47a8-a1f0-e3bcf8e4cdbc","createTime":"2024-01-23T15:06:52.300918Z","updateTime":"2024-01-23T15:06:52.300918Z","locationId":"eur3","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-01-23T15:06:52.300918Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"e","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IJHp8prv84MDMPWLhpTn84MD"}
+[debug] [2024-01-23T15:53:45.405Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-01-23T15:53:45.405Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-23T15:53:45.405Z] > authorizing via signed-in user (magnifect@gmail.com)
+[debug] [2024-01-23T15:53:45.405Z] [iam] checking project bitirme-projem-1db40 for permissions ["firebase.projects.get"]
+[debug] [2024-01-23T15:53:45.406Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitirme-projem-1db40:testIamPermissions [none]
+[debug] [2024-01-23T15:53:45.406Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitirme-projem-1db40:testIamPermissions x-goog-quota-user=projects/bitirme-projem-1db40
+[debug] [2024-01-23T15:53:45.406Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitirme-projem-1db40:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-01-23T15:53:46.408Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitirme-projem-1db40:testIamPermissions 200
+[debug] [2024-01-23T15:53:46.409Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitirme-projem-1db40:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-01-23T15:53:57.892Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/bitirme-projem-1db40/releases pageSize=10&pageToken=
+[debug] [2024-01-23T15:53:58.883Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/bitirme-projem-1db40/releases 200
+[debug] [2024-01-23T15:53:58.883Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/bitirme-projem-1db40/releases {"releases":[{"name":"projects/bitirme-projem-1db40/releases/cloud.firestore","rulesetName":"projects/bitirme-projem-1db40/rulesets/79c1c18f-9f29-4e42-809c-2e409a1e7c82","createTime":"2024-01-23T15:06:55.822836Z","updateTime":"2024-01-23T15:06:55.822836Z"}]}
+[debug] [2024-01-23T15:53:58.883Z] Found ruleset: projects/bitirme-projem-1db40/rulesets/79c1c18f-9f29-4e42-809c-2e409a1e7c82
+[debug] [2024-01-23T15:53:58.883Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/bitirme-projem-1db40/rulesets/79c1c18f-9f29-4e42-809c-2e409a1e7c82 [none]
+[debug] [2024-01-23T15:53:59.121Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/bitirme-projem-1db40/rulesets/79c1c18f-9f29-4e42-809c-2e409a1e7c82 200
+[debug] [2024-01-23T15:53:59.121Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/bitirme-projem-1db40/rulesets/79c1c18f-9f29-4e42-809c-2e409a1e7c82 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-01-23T15:54:02.151Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/bitirme-projem-1db40/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-01-23T15:54:02.153Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/bitirme-projem-1db40/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-01-23T15:54:02.443Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/bitirme-projem-1db40/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-01-23T15:54:02.443Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/bitirme-projem-1db40/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-01-23T15:54:02.961Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/bitirme-projem-1db40/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-01-23T15:54:02.961Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/bitirme-projem-1db40/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/bitirme-projem-1db40/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2024-01-23T15:54:02.963Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-23T15:54:02.963Z] > authorizing via signed-in user (magnifect@gmail.com)
+[debug] [2024-01-23T15:54:02.963Z] [iam] checking project bitirme-projem-1db40 for permissions ["firebase.projects.get"]
+[debug] [2024-01-23T15:54:02.963Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitirme-projem-1db40:testIamPermissions [none]
+[debug] [2024-01-23T15:54:02.963Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitirme-projem-1db40:testIamPermissions x-goog-quota-user=projects/bitirme-projem-1db40
+[debug] [2024-01-23T15:54:02.963Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitirme-projem-1db40:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-01-23T15:54:03.904Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitirme-projem-1db40:testIamPermissions 200
+[debug] [2024-01-23T15:54:03.904Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitirme-projem-1db40:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-01-23T15:54:03.905Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-01-23T15:54:03.905Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/bitirme-projem-1db40
+[debug] [2024-01-23T15:54:03.906Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-01-23T15:54:03.907Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/bitirme-projem-1db40
+[debug] [2024-01-23T15:54:05.051Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/runtimeconfig.googleapis.com 200
+[debug] [2024-01-23T15:54:05.051Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-01-23T15:54:05.051Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/cloudfunctions.googleapis.com 200
+[debug] [2024-01-23T15:54:05.051Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-01-23T15:54:05.052Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-01-23T15:54:05.052Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/bitirme-projem-1db40
+[debug] [2024-01-23T15:54:06.193Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-01-23T15:54:06.193Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-01-23T15:54:16.194Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-01-23T15:54:16.194Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/bitirme-projem-1db40
+[debug] [2024-01-23T15:54:17.343Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/cloudfunctions.googleapis.com 200
+[debug] [2024-01-23T15:54:17.343Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bitirme-projem-1db40/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2024-01-23T15:55:12.626Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bitirme-projem-1db40 [none]
+[debug] [2024-01-23T15:55:12.959Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bitirme-projem-1db40 200
+[debug] [2024-01-23T15:55:12.959Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bitirme-projem-1db40 {"projectId":"bitirme-projem-1db40","projectNumber":"364688922649","displayName":"Bitirme projem ","name":"projects/bitirme-projem-1db40","resources":{"hostingSite":"bitirme-projem-1db40","realtimeDatabaseInstance":"bitirme-projem-1db40-default-rtdb"},"state":"ACTIVE","etag":"1_583ef387-9a99-4901-9825-4903c2f23f3f"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-01-23T15:55:34.977Z] Error: ENOTDIR: not a directory, scandir 'C:\Users\PC\Desktop\Bitirmeprojem\n'
+    at Object.readdirSync (node:fs:1514:26)
+    at Object.createFileSync (C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:55:10)
+    at Config.writeProjectFile (C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:154:12)
+    at C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:178:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async doSetup (C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:173:13)
+    at async init (C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:37:9)
+[error] 
+[error] Error: An unexpected error has occurred.

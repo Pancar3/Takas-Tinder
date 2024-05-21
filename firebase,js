@@ -1,0 +1,22 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyB8gQYy1fWL6OPmITF4o-IyfDBfOKRCqqc",
+  authDomain: "bitirme-projem-1db40.firebaseapp.com",
+  databaseURL: "https://bitirme-projem-1db40-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "bitirme-projem-1db40",
+  storageBucket: "bitirme-projem-1db40.appspot.com",
+  messagingSenderId: "364688922649",
+  appId: "1:364688922649:web:dd2d001d178cbae93df288",
+  measurementId: "G-X4LTL8RSXZ"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
